@@ -1,6 +1,6 @@
-FROM alpine as runtime
-LABEL "repository"="https://github.com/elgohr/ecr-login-action"
-LABEL "maintainer"="Lars Gohr"
+FROM alpine:3.11 as runtime
+LABEL "repository"="https://github.com/kiernanmcgowan/ecr-login-action"
+LABEL "maintainer"="Kiernan McGowan (og: Lars Gohr)"
 
 RUN apk update \
   && apk upgrade \
